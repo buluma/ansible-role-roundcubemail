@@ -16,7 +16,7 @@ molecule:
     matrix:
       - image: "debian-systemd"
         tag: "latest"
-      - image: "debian-systemd"
+      - image: "debian"
         tag: "bookworm"
       - image: "fedora-systemd"
         tag: "34"
