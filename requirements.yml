@@ -1,0 +1,17 @@
+---
+roles:
+  - name: robertdebock.bootstrap
+  - name: robertdebock.buildtools
+  - name: robertdebock.epel
+  - name: robertdebock.httpd
+  - name: robertdebock.mysql
+  - name: robertdebock.openssl
+  - name: robertdebock.php
+  - name: robertdebock.python_pip
+  - name: robertdebock.reboot
+  - name: robertdebock.selinux
+collections:
+  - name: community.mysql
+  - name: ansible.posix
+  - name: community.crypto
+  - name: community.general
