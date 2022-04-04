@@ -8,7 +8,7 @@
     ../../vars/main.yml
 
   roles:
-    - role: robertdebock.httpd
+    - role: buluma.httpd
       httpd_vhosts:
         - name: docroot
           servername: roundcubemail.example.com

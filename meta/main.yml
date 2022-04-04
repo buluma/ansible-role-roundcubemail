@@ -26,4 +26,4 @@ galaxy_info:
     - roundcubemail
 
 dependencies:
-  - robertdebock.httpd
+  - buluma.httpd

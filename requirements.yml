@@ -1,15 +1,15 @@
 ---
 roles:
-  - name: robertdebock.bootstrap
-  - name: robertdebock.buildtools
-  - name: robertdebock.epel
-  - name: robertdebock.httpd
-  - name: robertdebock.mysql
-  - name: robertdebock.openssl
-  - name: robertdebock.php
-  - name: robertdebock.python_pip
-  - name: robertdebock.reboot
-  - name: robertdebock.selinux
+  - name: buluma.bootstrap
+  - name: buluma.buildtools
+  - name: buluma.epel
+  - name: buluma.httpd
+  - name: buluma.mysql
+  - name: buluma.openssl
+  - name: buluma.php
+  - name: buluma.python_pip
+  - name: buluma.reboot
+  - name: buluma.selinux
 collections:
   - name: community.mysql
   - name: ansible.posix
