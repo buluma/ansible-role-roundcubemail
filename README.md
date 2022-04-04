@@ -2,9 +2,9 @@
 
 Install and configure roundcubemail on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-roundcubemail/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-roundcubemail/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-roundcubemail/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-roundcubemail)|[![quality](https://img.shields.io/ansible/quality/24815)](https://galaxy.ansible.com/robertdebock/roundcubemail)|[![downloads](https://img.shields.io/ansible/role/d/24815)](https://galaxy.ansible.com/robertdebock/roundcubemail)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-roundcubemail.svg)](https://github.com/robertdebock/ansible-role-roundcubemail/releases/)|
+|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|---------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-roundcubemail/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-roundcubemail/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-roundcubemail/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-roundcubemail)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/roundcubemail)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/roundcubemail)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-roundcubemail.svg)](https://github.com/buluma/ansible-role-roundcubemail/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-roundcubemail.svg)](https://github.com/buluma/ansible-role-roundcubemail/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-roundcubemail.svg)](https://github.com/buluma/ansible-role-roundcubemail/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -25,7 +25,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
         - name: docroot
           servername: roundcubemail.example.com
           documentroot: "{{ roundcubemail_install_directory }}"
-    - role: robertdebock.roundcubemail
+    - role: buluma.roundcubemail
 ```
 
 The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:
@@ -62,7 +62,6 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
           priv: "roundcube.*:ALL"
 ```
 
-Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
 ## [Role Variables](#role-variables)
 
@@ -88,7 +87,7 @@ roundcubemail_spellcheck_engine: pspell
 
 ## [Requirements](#requirements)
 
-- pip packages listed in [requirements.txt](https://github.com/robertdebock/ansible-role-roundcubemail/blob/master/requirements.txt).
+- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-roundcubemail/blob/main/requirements.txt).
 
 ## [Status of used roles](#status-of-requirements)
 
@@ -96,16 +95,16 @@ The following roles are used to prepare a system. You can prepare your system in
 
 | Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[robertdebock.bootstrap](https://galaxy.ansible.com/robertdebock/bootstrap)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-bootstrap)|
-|[robertdebock.buildtools](https://galaxy.ansible.com/robertdebock/buildtools)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-buildtools/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-buildtools/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-buildtools/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-buildtools)|
-|[robertdebock.epel](https://galaxy.ansible.com/robertdebock/epel)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-epel/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-epel/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-epel)|
-|[robertdebock.httpd](https://galaxy.ansible.com/robertdebock/httpd)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-httpd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-httpd/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-httpd/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-httpd)|
-|[robertdebock.mysql](https://galaxy.ansible.com/robertdebock/mysql)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-mysql/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-mysql/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-mysql/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-mysql)|
-|[robertdebock.openssl](https://galaxy.ansible.com/robertdebock/openssl)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-openssl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-openssl/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-openssl/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-openssl)|
-|[robertdebock.php](https://galaxy.ansible.com/robertdebock/php)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-php/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-php/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-php/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-php)|
-|[robertdebock.python_pip](https://galaxy.ansible.com/robertdebock/python_pip)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-python_pip/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-python_pip/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-python_pip/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-python_pip)|
-|[robertdebock.reboot](https://galaxy.ansible.com/robertdebock/reboot)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-reboot/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-reboot/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-reboot/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-reboot)|
-|[robertdebock.selinux](https://galaxy.ansible.com/robertdebock/selinux)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-selinux/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-selinux/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-selinux/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-selinux)|
+|[robertdebock.bootstrap](https://galaxy.ansible.com/buluma/robertdebock.bootstrap)|[![Build Status GitHub](https://github.com/buluma/robertdebock.bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.bootstrap/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.bootstrap)|
+|[robertdebock.buildtools](https://galaxy.ansible.com/buluma/robertdebock.buildtools)|[![Build Status GitHub](https://github.com/buluma/robertdebock.buildtools/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.buildtools/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.buildtools/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.buildtools)|
+|[robertdebock.epel](https://galaxy.ansible.com/buluma/robertdebock.epel)|[![Build Status GitHub](https://github.com/buluma/robertdebock.epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.epel/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.epel/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.epel)|
+|[robertdebock.httpd](https://galaxy.ansible.com/buluma/robertdebock.httpd)|[![Build Status GitHub](https://github.com/buluma/robertdebock.httpd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.httpd/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.httpd/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.httpd)|
+|[robertdebock.mysql](https://galaxy.ansible.com/buluma/robertdebock.mysql)|[![Build Status GitHub](https://github.com/buluma/robertdebock.mysql/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.mysql/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.mysql/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.mysql)|
+|[robertdebock.openssl](https://galaxy.ansible.com/buluma/robertdebock.openssl)|[![Build Status GitHub](https://github.com/buluma/robertdebock.openssl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.openssl/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.openssl/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.openssl)|
+|[robertdebock.php](https://galaxy.ansible.com/buluma/robertdebock.php)|[![Build Status GitHub](https://github.com/buluma/robertdebock.php/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.php/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.php/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.php)|
+|[robertdebock.python_pip](https://galaxy.ansible.com/buluma/robertdebock.python_pip)|[![Build Status GitHub](https://github.com/buluma/robertdebock.python_pip/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.python_pip/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.python_pip/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.python_pip)|
+|[robertdebock.reboot](https://galaxy.ansible.com/buluma/robertdebock.reboot)|[![Build Status GitHub](https://github.com/buluma/robertdebock.reboot/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.reboot/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.reboot/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.reboot)|
+|[robertdebock.selinux](https://galaxy.ansible.com/buluma/robertdebock.selinux)|[![Build Status GitHub](https://github.com/buluma/robertdebock.selinux/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.selinux/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.selinux/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.selinux)|
 
 ## [Dependencies](#dependencies)
 
@@ -114,14 +113,15 @@ Most roles require some kind of preparation, this is done in `molecule/default/p
 - robertdebock.httpd
 ## [Context](#context)
 
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
+This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.co.ke/) for further information.
 
 Here is an overview of related roles:
-![dependencies](https://raw.githubusercontent.com/robertdebock/ansible-role-roundcubemail/png/requirements.png "Dependencies")
+
+![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-roundcubemail/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
 
-This role has been tested on these [container images](https://hub.docker.com/u/robertdebock):
+This role has been tested on these [container images](https://hub.docker.com/u/buluma):
 
 |container|tags|
 |---------|----|
@@ -148,7 +148,7 @@ Some roles can't run on a specific distribution or version. Here are some except
 | alpine | failed to install mariadb py-mysqldb (mysql role) |
 
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-roundcubemail/issues)
+If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-roundcubemail/issues)
 
 ## [License](#license)
 
@@ -156,6 +156,4 @@ Apache-2.0
 
 ## [Author Information](#author-information)
 
-[Robert de Bock](https://robertdebock.nl/)
-
-Please consider [sponsoring me](https://github.com/sponsors/robertdebock).
+[Michael Buluma](https://buluma.github.io/)
