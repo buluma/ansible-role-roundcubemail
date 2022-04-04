@@ -9,6 +9,7 @@
     - role: buluma.epel
     - role: buluma.buildtools
     - role: buluma.python_pip
+    - role: buluma.ca_certificates
     - role: buluma.openssl
       openssl_items:
         - name: apache-httpd
