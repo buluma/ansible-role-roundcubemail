@@ -25,4 +25,4 @@ galaxy_info:
     - roundcubemail
 
 dependencies:
-  - buluma.httpd
+  - role: buluma.httpd
