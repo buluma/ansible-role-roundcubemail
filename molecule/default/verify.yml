@@ -7,7 +7,7 @@
   tasks:
     - name: Access the webinterface
       ansible.builtin.uri:
-        url: "http://localhost/roundcubemail/"
+        url: "http://127.0.0.1/roundcubemail/"
         return_content: yes
       register: roundcubemail_access_the_webinterface
       failed_when:
