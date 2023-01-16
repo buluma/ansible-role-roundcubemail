@@ -11,3 +11,6 @@ exclude_paths:
   - ./molecule/default/collections.yml
   - ./.tox
   - ./.cache
+
+warn_list:  # or 'skip_list' to silence them completely
+  - yaml[comments-indentation]  # Violations reported by yamllint.
