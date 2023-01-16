@@ -29,5 +29,3 @@ provisioner:
   config_options:
     defaults:
       interpreter_python: auto_legacy_silent
-# verifier:
-  # name: ansible
