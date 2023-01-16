@@ -14,3 +14,4 @@ exclude_paths:
 
 warn_list:  # or 'skip_list' to silence them completely
   - yaml[comments-indentation]  # Violations reported by yamllint.
+  - jinja[spacing]  # Rule that looks inside jinja2 templates.
