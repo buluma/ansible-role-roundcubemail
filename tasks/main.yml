@@ -1,4 +1,6 @@
 ---
+# tasks file for roundcubemail
+
 - name: Import assert.yml
   ansible.builtin.import_tasks: assert.yml
   run_once: yes
@@ -31,6 +33,9 @@
     mode: "{{ roundcubemail_mode }}"
 
 - name: Configure selinux settings
+  when:
+    - ansible_selinux is defined
+    - ansible_selinux.status == "enabled"
   block:
     - name: Place selinux type enforcement
       ansible.builtin.copy:
@@ -50,12 +55,11 @@
       loop:
         - httpd_setrlimit
         - daemons_enable_cluster_mode
-  when:
-    - ansible_selinux is defined
-    - ansible_selinux.status == "enabled"
 
 - name: Configure httpd
   ansible.builtin.template:
     src: roundcube.conf.j2
     dest: "{{ roundcubemail_httpd_configuration }}"
     mode: "0644"
+  notify:
+    - Restart httpd
