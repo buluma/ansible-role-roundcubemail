@@ -1,10 +1,10 @@
-# [roundcubemail](#roundcubemail)
+# [Ansible role roundcubemail](#roundcubemail)
 
 Install and configure roundcubemail on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-roundcubemail/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-roundcubemail/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-roundcubemail/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-roundcubemail)|[![quality](https://img.shields.io/ansible/quality/58660)](https://galaxy.ansible.com/buluma/roundcubemail)|[![downloads](https://img.shields.io/ansible/role/d/58660)](https://galaxy.ansible.com/buluma/roundcubemail)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-roundcubemail.svg)](https://github.com/buluma/ansible-role-roundcubemail/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-roundcubemail.svg)](https://github.com/buluma/ansible-role-roundcubemail/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-roundcubemail.svg)](https://github.com/buluma/ansible-role-roundcubemail/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-roundcubemail/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-roundcubemail/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-roundcubemail/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-roundcubemail)|[![downloads](https://img.shields.io/ansible/role/d/4823)](https://galaxy.ansible.com/buluma/roundcubemail)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-roundcubemail.svg)](https://github.com/buluma/ansible-role-roundcubemail/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-roundcubemail.svg)](https://github.com/buluma/ansible-role-roundcubemail/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-roundcubemail.svg)](https://github.com/buluma/ansible-role-roundcubemail/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -88,6 +88,16 @@ roundcubemail_des_key: 964af56991531a805bd55085
 
 # The spellchecker to use. Either: 'google', 'pspell', 'enchant' or 'atd'.
 roundcubemail_spellcheck_engine: pspell
+
+# The mail host chosen to perform the log-in.
+roundcubemail_default_host: localhost
+roundcubemail_default_port: 143
+
+# SMTP server host (for sending mails).
+roundcubemail_smtp_server: localhost
+roundcubemail_smtp_port: 25
+roundcubemail_smtp_user: ""
+roundcubemail_smtp_pass: ""
 ```
 
 ## [Requirements](#requirements)
