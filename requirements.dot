@@ -1,0 +1,29 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "roundcubemail" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.buildtools" [fillcolor=green style=filled]
+    "buluma.epel" [fillcolor=green style=filled]
+    "buluma.httpd" [fillcolor=green style=filled]
+    "buluma.mysql" [fillcolor=green style=filled]
+    "buluma.ca_certificates" [fillcolor=green style=filled]
+    "buluma.openssl" [fillcolor=green style=filled]
+    "buluma.php" [fillcolor=green style=filled]
+    "buluma.python_pip" [fillcolor=green style=filled]
+    "buluma.reboot" [fillcolor=green style=filled]
+    "buluma.selinux" [fillcolor=green style=filled]
+  }
+  "roundcubemail" -> "buluma.bootstrap"
+  "roundcubemail" -> "buluma.buildtools"
+  "roundcubemail" -> "buluma.epel"
+  "roundcubemail" -> "buluma.httpd"
+  "roundcubemail" -> "buluma.mysql"
+  "roundcubemail" -> "buluma.ca_certificates"
+  "roundcubemail" -> "buluma.openssl"
+  "roundcubemail" -> "buluma.php"
+  "roundcubemail" -> "buluma.python_pip"
+  "roundcubemail" -> "buluma.reboot"
+  "roundcubemail" -> "buluma.selinux"
+}
