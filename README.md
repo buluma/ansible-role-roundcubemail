@@ -42,14 +42,13 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 - name: Prepare
   hosts: all
   become: true
-  gather_facts: no
+  gather_facts: false
 
   roles:
     - role: buluma.bootstrap
     - role: buluma.epel
     - role: buluma.buildtools
     - role: buluma.python_pip
-    - role: buluma.ca_certificates
     - role: buluma.openssl
       openssl_items:
         - name: apache-httpd
