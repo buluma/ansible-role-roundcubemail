@@ -19,4 +19,4 @@
         - name: docroot
           servername: roundcubemail.example.com
           documentroot: "{{ roundcubemail_install_directory }}"
-    - role: ansible-role-roundcubemail
+    - role: buluma.roundcubemail
