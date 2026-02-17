@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: buluma
   role_name: roundcubemail
@@ -6,9 +7,9 @@ galaxy_info:
   company: ShadowNet
   min_ansible_version: '2.12'
   platforms:
-  - name: Debian
-    versions:
-    - all
+    - name: Debian
+      versions:
+        - all
   - name: Fedora
     versions:
     - all
@@ -19,6 +20,6 @@ galaxy_info:
     versions:
     - all
   galaxy_tags:
-  - roundcubemail
+    - roundcubemail
 dependencies:
-- role: buluma.httpd
+  - role: buluma.httpd
