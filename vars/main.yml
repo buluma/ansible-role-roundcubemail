@@ -41,7 +41,8 @@ _roundcubemail_requirements:
     - php-mbstring
     - python3-PyMySQL
 
-roundcubemail_requirements: "{{ _roundcubemail_requirements[ansible_os_family ~ '-' ~ ansible_distribution_major_version] | default(_roundcubemail_requirements[ansible_os_family] | default(_roundcubemail_requirements['default'] )) }}"
+roundcubemail_requirements: "{{ _roundcubemail_requirements[ansible_os_family ~ '-' ~ ansible_distribution_major_version] | default(_roundcubemail_requirements[ansible_os_family]
+  | default(_roundcubemail_requirements['default'] )) }}"
 
 _roundcubemail_packages:
   default:
@@ -89,7 +90,8 @@ _roundcubemail_install_directory:
 
 roundcubemail_install_directory: "{{ _roundcubemail_install_directory[ansible_os_family] | default(_roundcubemail_install_directory['default']) }}"
 
-roundcubemail_database_url: "mysql://{{ roundcubemail_database_user }}:{{ roundcubemail_database_password }}@{{ roundcubemail_database_host }}/{{ roundcubemail_database_name }}"
+roundcubemail_database_url: "mysql://{{ roundcubemail_database_user }}:{{ roundcubemail_database_password }}@{{ roundcubemail_database_host }}/{{ roundcubemail_database_name
+  }}"
 
 roundcubemail_database_target: "{{ roundcubemail_install_directory }}/SQL/mysql.initial.sql"
 
@@ -103,7 +105,6 @@ _roundcubemail_httpd_configuration:
   Suse: /etc/apache2/conf.d/roundcubemail.conf
 
 roundcubemail_httpd_configuration: "{{ _roundcubemail_httpd_configuration[ansible_os_family] | default(_roundcubemail_httpd_configuration['default']) }}"
-
 
 _roundcube_httpd_service:
   default: httpd
