@@ -12,61 +12,61 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-  - name: Converge
-    hosts: all
-    become: true
-    gather_facts: true
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: true
 
-    vars_files: ../../vars/main.yml
+  vars_files: ../../vars/main.yml
 
-    pre_tasks:
-      - name: Update apt cache.
-        apt: update_cache=yes cache_valid_time=600
-        when: ansible_os_family == 'Debian'
-        changed_when: false
+  pre_tasks:
+  - name: Update apt cache.
+    apt: update_cache=yes cache_valid_time=600
+    when: ansible_os_family == 'Debian'
+    changed_when: false
 
-    roles:
-      - role: buluma.httpd
-        httpd_vhosts:
-          - name: docroot
-            servername: roundcubemail.example.com
-            documentroot: "{{ roundcubemail_install_directory }}"
-      - role: buluma.roundcubemail
+  roles:
+  - role: buluma.httpd
+    httpd_vhosts:
+    - name: docroot
+      servername: roundcubemail.example.com
+      documentroot: "{{ roundcubemail_install_directory }}"
+  - role: buluma.roundcubemail
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-roundcubemail/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-  - name: Prepare
-    hosts: all
-    become: true
-    gather_facts: false
+- name: Prepare
+  hosts: all
+  become: true
+  gather_facts: false
 
-    roles:
-      - role: buluma.bootstrap
-      - role: buluma.epel
-      - role: buluma.buildtools
-      - role: buluma.python_pip
-      - role: buluma.openssl
-        openssl_items:
-          - name: apache-httpd
-            common_name: "{{ ansible_fqdn }}"
-      - role: buluma.selinux
-      - role: buluma.httpd
-      - role: buluma.php
-        php_upload_max_filesize: 5M
-        php_post_max_size: 6M
-        php_date_timezone: Europe/Amsterdam
-        php_extension:
-          - mcrypt.so
-      - role: buluma.mysql
-        mysql_databases:
-          - name: roundcube
-        mysql_users:
-          - name: roundcube
-            password: roundcube
-            priv: "roundcube.*:ALL"
+  roles:
+  - role: buluma.bootstrap
+  - role: buluma.epel
+  - role: buluma.buildtools
+  - role: buluma.python_pip
+  - role: buluma.openssl
+    openssl_items:
+    - name: apache-httpd
+      common_name: "{{ ansible_fqdn }}"
+  - role: buluma.selinux
+  - role: buluma.httpd
+  - role: buluma.php
+    php_upload_max_filesize: 5M
+    php_post_max_size: 6M
+    php_date_timezone: Europe/Amsterdam
+    php_extension:
+    - mcrypt.so
+  - role: buluma.mysql
+    mysql_databases:
+    - name: roundcube
+    mysql_users:
+    - name: roundcube
+      password: roundcube
+      priv: "roundcube.*:ALL"
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
