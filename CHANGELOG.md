@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-roundcubemail/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-roundcubemail/compare/v0.2.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#11](https://github.com/buluma/ansible-role-roundcubemail/pull/11) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.2.0](https://github.com/buluma/ansible-role-roundcubemail/tree/v0.2.0) (2024-01-28)
 
 [Full Changelog](https://github.com/buluma/ansible-role-roundcubemail/compare/v0.1.3...v0.2.0)
