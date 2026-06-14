@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-roundcubemail/tree/HEAD)
+## [v26.6.0](https://github.com/buluma/ansible-role-roundcubemail/tree/v26.6.0) (2026-06-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-roundcubemail/compare/v0.2.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-roundcubemail/compare/v0.2.0...v26.6.0)
 
 **Merged pull requests:**
 
