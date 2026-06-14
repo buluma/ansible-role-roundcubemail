@@ -12,7 +12,7 @@
     - role: buluma.openssl
       openssl_items:
         - name: apache-httpd
-          common_name: "{{ ansible_facts.fqdn }}"
+          common_name: "{{ ansible_fqdn }}"
     - role: buluma.selinux
     - role: buluma.httpd
     - role: buluma.php
