@@ -11,7 +11,7 @@ roles:
   - name: buluma.python_pip
   - name: buluma.reboot
   - name: buluma.selinux
-collections: []
+collections:
   - name: community.mysql
   - name: ansible.posix
   - name: community.crypto
