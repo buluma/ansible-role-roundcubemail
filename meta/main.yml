@@ -16,6 +16,15 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
+    - name: Alpine
+      versions:
+        - all
+    - name: EL
+      versions:
+        - all
+    - name: Suse
+      versions:
+        - all
   galaxy_tags:
     - roundcubemail
 dependencies:
