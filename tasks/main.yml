@@ -56,6 +56,15 @@
         - httpd_setrlimit
         - daemons_enable_cluster_mode
 
+- name: Check for public_html webroot
+  ansible.builtin.stat:
+    path: "{{ roundcubemail_install_directory }}/public_html/index.php"
+  register: roundcubemail_public_html_stat
+
+- name: Set roundcubemail webroot
+  ansible.builtin.set_fact:
+    roundcubemail_webroot: "{{ roundcubemail_install_directory ~ ('/public_html' if roundcubemail_public_html_stat.stat.exists else '') }}"
+
 - name: Configure httpd
   ansible.builtin.template:
     src: roundcube.conf.j2
