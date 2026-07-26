@@ -17,4 +17,8 @@ platforms:
       - "43"
   - name: Ubuntu
     versions:
-      - all
+      # Excludes 26.04: ships PHP 8.5, whose native array_first() collides
+      # with the packaged Roundcube 1.6.11's unguarded polyfill of the same
+      # name in bootstrap.php (upstream bug, fatal on every request).
+      - "24.04"
+      - "22.04"

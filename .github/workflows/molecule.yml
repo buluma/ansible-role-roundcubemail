@@ -63,8 +63,6 @@ jobs:
           - image: "docker-molecule-images"
             tag: "fedora43"
           - image: "docker-molecule-images"
-            tag: "ubuntu2604"
-          - image: "docker-molecule-images"
             tag: "ubuntu2404"
           - image: "docker-molecule-images"
             tag: "ubuntu2204"
