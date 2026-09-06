@@ -176,9 +176,9 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |container|tags|
 |---------|----|
 |[EL](https://hub.docker.com/r/buluma/docker-molecule-images)|10, 9|
-|[Debian](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
+|[Debian](https://hub.docker.com/r/buluma/docker-molecule-images)|bookworm, trixie|
 |[Fedora](https://hub.docker.com/r/buluma/docker-molecule-images)|44, 43|
-|[Ubuntu](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
+|[Ubuntu](https://hub.docker.com/r/buluma/docker-molecule-images)|noble, jammy|
 
 The minimum version of Ansible required is 2.12, tests have been done on:
 
