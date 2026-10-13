@@ -1,11 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-roundcubemail/tree/HEAD)
+## [v26.10.9](https://github.com/buluma/ansible-role-roundcubemail/tree/v26.10.9) (2026-10-05)
 
-[Full Changelog](https://github.com/buluma/ansible-role-roundcubemail/compare/v26.9.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-roundcubemail/compare/v26.9.0...v26.10.9)
 
 **Merged pull requests:**
 
+- Bump release-drafter/release-drafter from 7.7.0 to 7.9.0 [\#19](https://github.com/buluma/ansible-role-roundcubemail/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Enable native Dependabot auto-merge with required CI [\#18](https://github.com/buluma/ansible-role-roundcubemail/pull/18) ([buluma](https://github.com/buluma))
 
 ## [v26.9.0](https://github.com/buluma/ansible-role-roundcubemail/tree/v26.9.0) (2026-09-06)
