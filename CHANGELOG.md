@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-roundcubemail/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-roundcubemail/compare/v26.10.9...HEAD)
+
+**Merged pull requests:**
+
+- Bump release-drafter/release-drafter from 7.9.0 to 7.10.0 [\#20](https://github.com/buluma/ansible-role-roundcubemail/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v26.10.9](https://github.com/buluma/ansible-role-roundcubemail/tree/v26.10.9) (2026-10-05)
 
 [Full Changelog](https://github.com/buluma/ansible-role-roundcubemail/compare/v26.9.0...v26.10.9)
