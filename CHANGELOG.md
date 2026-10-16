@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump ansible/ansible-lint from 26.9.0 to 26.10.0 [\#21](https://github.com/buluma/ansible-role-roundcubemail/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 7.9.0 to 7.10.0 [\#20](https://github.com/buluma/ansible-role-roundcubemail/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v26.10.9](https://github.com/buluma/ansible-role-roundcubemail/tree/v26.10.9) (2026-10-05)
