@@ -6,6 +6,8 @@
 
 **Merged pull requests:**
 
+- ANS-70: Fix changelog workflow [\#25](https://github.com/buluma/ansible-role-roundcubemail/pull/25) ([buluma](https://github.com/buluma))
+- Bump release-drafter/release-drafter from 7.10.0 to 7.11.0 [\#24](https://github.com/buluma/ansible-role-roundcubemail/pull/24) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 26.10.1 to 26.11.0 [\#23](https://github.com/buluma/ansible-role-roundcubemail/pull/23) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 26.10.0 to 26.10.1 [\#22](https://github.com/buluma/ansible-role-roundcubemail/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 26.9.0 to 26.10.0 [\#21](https://github.com/buluma/ansible-role-roundcubemail/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -52,10 +54,6 @@
 ## [v0.1.2](https://github.com/buluma/ansible-role-roundcubemail/tree/v0.1.2) (2022-04-25)
 
 [Full Changelog](https://github.com/buluma/ansible-role-roundcubemail/compare/v0.1.1...v0.1.2)
-
-**Closed issues:**
-
-- Add to tracker [\#1](https://github.com/buluma/ansible-role-roundcubemail/issues/1)
 
 ## [v0.1.1](https://github.com/buluma/ansible-role-roundcubemail/tree/v0.1.1) (2022-04-04)
 
